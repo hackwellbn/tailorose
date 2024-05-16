@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --primary-color: #ff5733; /* Define primary color */
+  --secondary-color: Darken; /* Define secondary color */
+  --text-color: #333; /* Define text color */
+  --background-color: #f0f0f0; /* Define background color */
+  --brown-color: #964b00; /* Define brown color */
+  --spacing: 20px; /* Default padding */
+  --footer-color: hsl(210, 25%, 20%); /* Navy blue */
+  --accent-color: hsl(0, 0%, 80%); /* Light grey */
+  --olive-green: hsl(82, 39%, 30%);
+  --beige: hsl(60, 50%, 90%);
+  --gold: hsl(45, 100%, 50%);
+  --soft-blue: hsl(200, 70%, 80%);
+  --light-pink: #f9ecff;
+  --charcoal-grey: hsl(210, 15%, 20%);
+  --dark-grey: hsl(0, 0%, 20%);
+  --dark-blue: hsl(220, 70%, 20%);
+  --orange: hsl(30, 100%, 50%); /* Beautiful orange */
+  --soft-dusty-blue: hsl(210, 20%, 80%); /* Soft dusty blue */
+  --linen-color: linen;
+
+  /* Font sizes */
+  --base-font-size: 16px;
+  --small-font-size: 14px;
+  --medium-font-size: 18px;
+  --large-font-size: 24px;
+  --extra-large-font-size: 4rem;
+
+  /* Font weights */
+  --regular-font-weight: normal;
+  --semi-bold-font-weight: 600;
+  --bold-font-weight: bold;
+
+  /* Spacing */
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+
+  /* Borders */
+  --border-width: 1px;
+  --border-style: solid;
+  --border-color: #cccccc;
+
+  /* Box Shadow */
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  /* Transition */
+  --transition-duration: 0.3s;
+  --transition-easing: ease-in-out;
+
+  /* Z-Index */
+  --z-index-menu: 10;
+  --z-index-modal: 100;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --spacing: 40px; 
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --spacing: 60px;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  text-transform: capitalize;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--text-color);
+}
+
+h1 {
+  color: var(--primary-color);
+}
+
+p {
+  color: var(--secondary-color);
+  font-size: 18px !important;
+}
+.btn {
+  text-decoration: none;
+  position: relative !important;
+  margin-top: 10px !important;
+}

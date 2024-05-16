@@ -1,0 +1,40 @@
+
+.partners h2,
+h3 {
+  text-align: center;
+}
+
+.partners-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+  color: var(--soft-blue);
+}
+
+.partners h2,
+h3 {
+  text-align: center;
+}
+
+.partners-text {
+  text-align: center;
+}
+
+
+ #about {
+    display: grid;
+    grid-template-columns:1fr 8fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image-left {
+    width: auto;
+    position: relative;
+    margin: 0 auto;
+}
+
+

@@ -1,0 +1,16 @@
+.consult{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 80%;
+    line-height: 1.6;
+    font-size: 18px !important;
+    gap: 16px;
+}
+.consult-content{
+    flex-grow: 1;
+    flex-basis: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+}

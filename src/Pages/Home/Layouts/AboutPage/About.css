@@ -1,0 +1,37 @@
+#about {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.image-left {
+  width: auto;
+  position: relative;
+  margin: 0 auto;
+}
+
+.image-left {
+  width: auto;
+  position: relative;
+}
+
+.image-left img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.section-text {
+  font-size: var(--medium-font-size);
+  color: var(--dark-grey);
+}
+
+.section-image {
+  width: 100%;
+  max-width: 600px;
+}

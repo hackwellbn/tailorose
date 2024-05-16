@@ -1,0 +1,130 @@
+.hero-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  position: relative;
+  background: url(assets/Test.svg);
+  background-size: cover;
+  background-origin: center;
+}
+
+.hero-content {
+  width: 100%;
+}
+
+.hero-text {
+  padding: 0 20px;
+  font-size: 1.5rem;
+  margin-top: 30%;
+}
+
+.hero-image {
+  width: 100%;
+  animation: slideIn 1s linear forwards;
+}
+
+.buttons {
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: hsla(9, 0%, 0%, 0.8) !important;
+  color: #ffffff !important;
+  border-radius: 10px;
+  margin-left: 10px;
+  /* animation: slideIn 0.5s linear forwards; */
+  border: 2px solid hsla(9, 0%, 0%, 0.8) !important;
+  margin: 10px;
+  position: absolute;
+}
+.btn:hover {
+  background: hsla(9, 0%, 0%, 1) !important;
+  transition: 0.3s;
+  animation: colorize 0.3s ease-in-out linear forwards !important;
+}
+@keyframes colorize {
+  0% {
+    transform: translateY(0);
+    opacity: 0.1;
+    transition: 0.1s;
+    transform: scale(0.9);
+  }
+  30% {
+    transform: translateY(-10px);
+    opacity: 0.5;
+    transition: 0.3s;
+    transform: scale(1);
+  }
+  50%,
+  100% {
+    transform: translateY(-10px);
+    opacity: 0.5;
+    transition: 0.3s;
+    transform: scale(1.5);
+  }
+}
+
+.heading {
+  animation: slideIn 0.7s linear forwards;
+}
+
+.paragraph-text {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  animation: slideIn 0.9s linear forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-text {
+    padding: 0 10px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  .span_1 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin-right: 5px;
+    font-size: 25px;
+  }
+
+  .hero-container {
+    padding: 20px;
+  }
+  .hero-text {
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+  }
+  .paragraph-text {
+    width: 300px;
+  }
+  .buttons {
+    margin-bottom: 10px;
+    gap: 10px;
+  }
+}

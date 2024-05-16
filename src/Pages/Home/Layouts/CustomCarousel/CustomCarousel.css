@@ -1,0 +1,32 @@
+.custom-carousel-container {
+    overflow: hidden;
+  }
+  
+  .custom-carousel-wrapper {
+    display: flex;
+  }
+  
+  .custom-carousel {
+    display: flex;
+    animation: moveCustomCarousel 60s linear infinite; /* Increased animation duration to 20s */
+  }
+  
+  .custom-card {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 200px;
+    margin-right: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  @keyframes moveCustomCarousel {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-400%)); /* Adjust percentage based on the number of cards */
+    }
+  }
+  

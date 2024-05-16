@@ -1,2 +1,2 @@
 # tailorose
-tailoring websit
+tailoring website

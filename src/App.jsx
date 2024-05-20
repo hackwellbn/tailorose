@@ -7,8 +7,6 @@ import Footer from "./Components/Footer/Footer";
 import AboutPage from "./Pages/AboutPage/Aboutpage";
 import "./App.css";
 import ContactPage from "./Pages/ContactPage/ContactPage";
-import LoginPage from "./Components/Authentication/SignUp/SignUpPage";
-import SignUpPage from "./Components/Authentication/SignUp/SignUpPage";
 const App = () => {
   return (
     <BrowserRouter>
@@ -18,9 +16,6 @@ const App = () => {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/AboutUs" element={<AboutPage />} />
         <Route path="/contacts" element={<ContactPage />} />
-        <Route path="/contacts" element={<ContactPage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/signup" element={<SignUpPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>

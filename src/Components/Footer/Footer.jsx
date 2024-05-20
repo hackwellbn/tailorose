@@ -21,7 +21,7 @@ const Footer = () => {
           <div>
             <h2>important links</h2>
             <p>
-              <a href="">facebook</a>
+              <a href="https://www.facebook.com/profile.php?id=61559780671309&mibextid=ZbWKwL">facebook</a>
             </p>
             <p>
               <a href="">Tiktok</a>

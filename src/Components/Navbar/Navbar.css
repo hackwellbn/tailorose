@@ -1,3 +1,4 @@
+/* Navbar styles */
 header {
   width: 100%;
   align-items: center;
@@ -10,12 +11,12 @@ header {
   align-items: center;
   margin: 0;
   padding: 20px;
-  animation: slideIn 0.2s linear forwards;
   z-index: 200;
   box-sizing: border-box;
   width: 100%;
   text-align: center;
   position: relative;
+  transition: transform 0.3s ease;
 }
 
 .navbar.fixed {
@@ -73,6 +74,7 @@ nav ul li .navLink:hover:after {
 #btn {
   border: 2px solid hsla(9, 0%, 0%, 0.8) !important;
 }
+
 #btn:hover {
   color: var(--footer-color) !important;
 }
@@ -81,17 +83,72 @@ nav ul li .navLink:hover:after {
   .navbar {
     display: none;
   }
+
+  .navbar.open {
+    display: block;
+    width: 80%;
+    background: hsla(0, 10%, 3%, 0.9);
+    height: 100vh;
+    backdrop-filter: blur(50px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .navbar ul {
+    display: block;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    width: 80%;
+    margin: auto;
+  }
+
+  .navbar h2 {
+    display: none;
+  }
+
+  .navbar ul li {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar ul li .navLink {
+    font-size: 1.4em;
+  }
+
   .span_1 {
     position: absolute;
     top: 20px;
     right: 20px;
     margin-right: 5px;
     font-size: 25px;
+    cursor: pointer;
+  }
+
+  .close-icon {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+  .navbar.open .close-icon {
+    display: block;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .span_1 {
+    display: none;
+  }
+
+  .close-icon {
     display: none;
   }
 }
